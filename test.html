@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        #box {
+            width: 600px;
+            height: 400px;
+            border: 1px solid red;
+        }
+    
+        #box {
+            position: static;
+            *position: relative;
+            display: table;
+            *display: block;
+        }
+    
+        #box-middle {
+            position: static;
+            *position: absolute;
+            display: table-cell;
+            *display: block;
+            *top: 50%;
+            vertical-align: middle;
+            *vertical-align: auto;
+        }
+    
+        #box-inner {
+            position: relative;
+            top: -50%;
+            background-color: rgb(194, 178, 185);
+            margin: 0 auto;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>   
+    <br />
+    <div id="box">
+          <div id="box-middle">
+                <div id="box-inner">content</div>
+              </div>
+    </div>
+</body>
+</html>
